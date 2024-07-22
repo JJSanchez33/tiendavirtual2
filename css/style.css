@@ -1,0 +1,118 @@
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+*, *::before *, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-color: var(--color-Principa);
+}
+:root{
+    --color-Principa:#6e0e60f0;
+    --colorNavegacion:#b23990;
+    --color__white:#fff;
+    --color__activado:#edf68b;
+}
+
+@font-face {
+    font-family:"fuente__enlaces" ;
+    src: url(/fuentes/osweld/Oswald/Oswald-VariableFont_wght.ttf);
+}
+ @font-face {
+    font-family:"furnte titulo" ;
+    src: url(/fuentes/sanseri/Rubik_Scribble/RubikScribble-Regular.ttf)
+ }
+/*contenedor**/
+.container{
+    margin: 0 auto;
+    width: 120rem;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.container__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__img{
+    max-width: 80%;
+    width: 15rem;
+    border-radius: 50%;
+}
+/*****navegacion*/
+.nav{
+    width: 100%;
+    margin-top: 2rem;
+   
+}
+.containe__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorNavegacion);
+    border: none;
+    border-radius: 5rem;
+    -webkit-box-shadow: 14px -17px 47px 4px rgba(173,75,173,1);
+-moz-box-shadow: 14px -17px 47px 4px rgba(173,75,173,1);
+box-shadow: 14px -17px 47px 4px rgba(173,75,173,1);
+    
+    
+}
+.navegacion__enlaces{
+    margin: 1rem;
+    text-decoration: none;
+    font-family: fuente__enlaces;
+    color: var(--color__white) ;
+    font-weight:bold;
+   padding: .8rem;
+   
+ 
+   
+ 
+}
+.enlace__activo1{
+    color: var(--color__activado);
+    
+   
+}
+.enlace__activo2:hover{
+    color: var(--color__activado);
+}
+/*section main*/
+.main{
+    margin-top: 5rem;
+
+}
+.main h1{
+    text-align: center;
+    font-family:furnte titulo ;
+}
+.contenedor__productos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.header__img1{
+    max-width: 95%;
+    width: 25rem;
+    -webkit-box-shadow: 14px 48px 94px 20px rgba(186,88,186,1);
+-moz-box-shadow: 14px 48px 94px 20px rgba(186,88,186,1);
+box-shadow: 14px 48px 94px 20px rgba(186,88,186,1);
+border-radius: 2rem;
+column-gap: 6;
+row-gap: 4;
+ 
+
+
+
+}
